@@ -6,7 +6,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('dblog.views',
     # Example:
-    (r'^blog/$', 'index'),
+    (r'^$', 'index'),
     (r'^blog/(?P<blog_id>\d+)/$', 'readblog'),
     (r'^blog/(?P<blog_id>\d+)/comment/$', 'comment'),
     (r'^blog/(?P<blog_id>\d+)/comment/add/$', 'addComment'),
