@@ -4,15 +4,15 @@ from django.conf.urls.defaults import *
 from django.contrib import admin
 admin.autodiscover()
 
-urlpatterns = patterns('',
+urlpatterns = patterns('dblog.views',
     # Example:
-    (r'^blog/$', 'dblog.views.index'),
-    (r'^blog/(?P<blog_id>\d+)/$', 'dblog.views.readblog'),
-    (r'^blog/(?P<blog_id>\d+)/comment/$', 'dblog.views.comment'),
-    (r'^blog/(?P<blog_id>\d+)/comment/add/$', 'dblog.views.addComment'),
-    (r'^blog/(?P<blog_id>\d+)/postComment/$', 'dblog.views.postComment'),
-    (r'^blog/writeBlog/$', 'dblog.views.writeBlog'),
-    (r'^blog/postEntry/$', 'dblog.views.postEntry'),
+    (r'^blog/$', 'index'),
+    (r'^blog/(?P<blog_id>\d+)/$', 'readblog'),
+    (r'^blog/(?P<blog_id>\d+)/comment/$', 'comment'),
+    (r'^blog/(?P<blog_id>\d+)/comment/add/$', 'addComment'),
+    (r'^blog/(?P<blog_id>\d+)/postComment/$', 'postComment'),
+    (r'^blog/writeBlog/$', 'writeBlog'),
+    (r'^blog/postEntry/$', 'postEntry'),
 
    # (r'^simpleblog/$', 'simpleblog.views.index'),
     # Uncomment the admin/doc line below to enable admin documentation:
