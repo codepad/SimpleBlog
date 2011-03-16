@@ -1,5 +1,5 @@
 {% extends 'dblog/masterTemplate.html' %}
-{% block title %} <h1> Simple Django Blog </h1> {% endblock %}
+{% block title %} Simple Django Blog {% endblock %}
 {% block content %}
 	<div class="bloglist">
 		{% if latest_blog_list %}

@@ -1,5 +1,5 @@
 {% extends 'dblog/masterTemplate.html' %}
-{% block title %} <h1> Post new blog entry </h1> {% endblock %}
+{% block title %} Post new blog entry {% endblock %}
 {% block content %}
 	<form action="/blog/postEntry/" method='post'>
 	{% csrf_token %}

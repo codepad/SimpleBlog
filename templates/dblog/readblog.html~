@@ -1,7 +1,6 @@
 {% extends 'dblog/masterTemplate.html' %}
 {% block title %} 
 	<h1> {{ blog.title }} </h1>
-	<hr></hr>
 	<p>Published on {{blog.post_date|date:"F j, Y"}}</p>
 	<p>Posted by {{blog.reply_to}}</p>
  	<p>Current rating is {{blog.rating}} out of 5</p> 

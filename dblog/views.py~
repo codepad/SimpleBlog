@@ -13,7 +13,7 @@ def index(request):
      '''Generate the context for the main summary page'''
      print "In Index...."
 	
-     latest_blog_list = Blog.objects.all().order_by('-post_date')
+     latest_blog_list = Blog.objects.all().order_by('-post_date')[:3]
      return render_to_response('dblog/index.html',{'latest_blog_list': latest_blog_list})
 
 def readblog(request, blog_id):

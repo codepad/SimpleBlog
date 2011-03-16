@@ -1,5 +1,5 @@
 {% extends 'dblog/masterTemplate.html' %}
-{% block title %} <h1> Add Comment to Blog "{{ blog.title }}" </h1> {% endblock %}
+{% block title %} Add Comment to Blog "{{ blog.title }}" {% endblock %}
 {% block content %}
 	<form action="/blog/{{ blog.id }}/postComment/"  method="post">
  	{% csrf_token %}

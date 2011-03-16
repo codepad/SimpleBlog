@@ -1,5 +1,5 @@
 {% extends 'dblog/masterTemplate.html' %}
-{% block title %} <h1> Comments on Blog "{{ blog.title }}" </h1> {% endblock %}
+{% block title %} Comments on Blog "{{ blog.title }}" {% endblock %}
 {% block content %}
 	<div class="commentlist">
 	{% if comments %}
