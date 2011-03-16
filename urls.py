@@ -14,10 +14,14 @@ urlpatterns = patterns('dblog.views',
     (r'^blog/writeBlog/$', 'writeBlog'),
     (r'^blog/postEntry/$', 'postEntry'),
 
-   # (r'^simpleblog/$', 'simpleblog.views.index'),
+    # (r'^simpleblog/$', 'simpleblog.views.index'),
     # Uncomment the admin/doc line below to enable admin documentation:
     # (r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     # Uncomment the next line to enable the admin:
+    # (r'^admin/', include(admin.site.urls)),
+)
+
+urlpatterns += patterns('',
     (r'^admin/', include(admin.site.urls)),
 )
